@@ -1,4 +1,5 @@
 import { Twitter, Github, MessageCircle, Mail } from 'lucide-react';
+import logo from '../../assets/logo.png';
 
 export function FilecoinFooter() {
   return (
@@ -7,17 +8,11 @@ export function FilecoinFooter() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
-                  <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" opacity="0.6"/>
-                  <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </div>
-              <span className="text-xl font-bold text-white">Filecoin<span className="text-green-400">.africa</span></span>
+              <img src={logo} alt="Filecoin Africa" className="logo" />
+
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm mb-6">
-              Building Africa's decentralized storage future. Join communities across Lagos, 
+              Building Africa's decentralized storage future. Join communities across Lagos,
               Cape Town, Nairobi, and beyond.
             </p>
             <div className="flex gap-4">

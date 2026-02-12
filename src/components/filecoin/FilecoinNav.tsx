@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Menu, X, Search } from 'lucide-react';
+import logo from '../../assets/logo.png';
 
 export function FilecoinNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,14 +10,8 @@ export function FilecoinNav() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-lg flex items-center justify-center">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-white">
-                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor" opacity="0.6"/>
-                <path d="M2 17L12 22L22 17" stroke="currentColor" strokeWidth="2"/>
-                <path d="M2 12L12 17L22 12" stroke="currentColor" strokeWidth="2"/>
-              </svg>
-            </div>
-            <span className="text-xl font-bold text-white">Filecoin<span className="text-green-400">.africa</span></span>
+            <img src={logo} alt="Filecoin Africa" className="logo" />
+            {/* <span className="text-xl font-bold text-white">Filecoin<span className="text-green-400">.africa</span></span> */}
           </div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -30,7 +25,7 @@ export function FilecoinNav() {
             </button>
           </div>
 
-          <button 
+          <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-white"
           >

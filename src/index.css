@@ -1984,3 +1984,8 @@ html {
   inherits: false;
   initial-value: 0 0 #0000;
 }
+
+.logo{
+  width: 80px !important;
+  object-position: cover;
+}
